@@ -107,26 +107,33 @@ public class VetorABC {
 		}
 	}
 
-	public static void MostrarVetorC(int VetorA[]) {
-		int k = 0, j = (VetorA.length / 2);
+public static void MostrarVetorC(int VetorA[]) {
+		int k=0  ;
+		int tamanhopar=0;
 		for (int i = 0; i < VetorA.length; i++) {
 			if (VetorA[i] % 2 == 0) {
 				VetorC[k] = VetorA[i];
 				k++;
-			} else {
+				tamanhopar=tamanhopar+1;
+			} 
+		}
+		int tamanhoimpar=k,j=tamanhoimpar;
+		for (int i = 0; i < VetorA.length; i++) {
+			if(VetorA[i]%2==0){
+			}else{
 				VetorC[j] = VetorA[i];
 				j++;
 			}
 		}
 		System.out.println("");
 		System.out.println("Valores Pares: ");
-		for (k = 0; k < (VetorA.length / 2); k++) {
+		for (k = 0; k < tamanhopar; k++) {
 			System.out.println(" Vetor C, Posição: " + k + " Valor Par: "
 					+ VetorC[k]);
 		}
 		System.out.println("");
 		System.out.println("Valores Impares: ");
-		for (j = (VetorA.length / 2); j < VetorA.length; j++) {
+		for (j = tamanhoimpar; j < VetorA.length; j++) {
 			System.out.println(" Vetor C, Posição: " + j + " Valor Impar: "
 					+ VetorC[j]);
 		}
