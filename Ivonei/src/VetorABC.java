@@ -1,5 +1,5 @@
 import java.util.*;
-
+// teste alteração trabalho
 public class VetorABC {
 	static int opcao = 4;
 	static Scanner in = new Scanner(System.in);
