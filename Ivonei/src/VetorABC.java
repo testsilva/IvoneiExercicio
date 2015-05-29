@@ -7,7 +7,7 @@ public class VetorABC {
 	static int VetorA[] = new int[tamvetores];
 	static int VetorB[] = new int[tamvetores];
 	static int VetorC[] = new int[tamvetores];
-
+// comentario deslocado
 	public static void main(String[] args) {
 		boolean PassouPorAqui = false;
 		while (opcao != 0) {
